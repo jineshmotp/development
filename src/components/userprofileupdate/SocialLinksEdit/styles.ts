@@ -1,0 +1,152 @@
+import { StyleSheet } from 'react-native';
+
+import { ColorTheme, FONT, SIZES } from '@/theme';
+import { deviceWidth } from '@/utils';
+
+export const styles = StyleSheet.create({
+  sectionContainer: { width: deviceWidth, alignItems: 'center' },
+  main: {
+    width: deviceWidth / 1.09,
+  },
+  addlink: {
+    width: deviceWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  listView: {
+    width: deviceWidth,
+    alignItems: 'center',
+    justifyContent: 'center',
+    // paddingVertical: 20,
+  },
+  Container: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: deviceWidth / 1.09,
+  },
+  dropdown: {
+    height: 27,
+    // borderColor: 'gray',
+    // borderWidth: 0.5,
+    borderRadius: 8,
+    paddingHorizontal: 8,
+    // width: deviceWidth / 2.5,
+    backgroundColor: '#EEEEEE',
+    // color: '#1E9991',
+    paddingLeft: 10,
+    width: deviceWidth / 2,
+    fontSize: 13,
+    color: '#EEEEEE',
+    borderColor: '#EEEEEE',
+  },
+  icon: {
+    marginRight: 5,
+  },
+  label: {
+    position: 'absolute',
+    backgroundColor: 'white',
+    left: 22,
+    top: 8,
+    zIndex: 999,
+    paddingHorizontal: 8,
+    fontSize: 14,
+    color: 'black',
+  },
+  placeholderStyle: {
+    fontSize: 13,
+    color: '#1E9991',
+  },
+  selectedTextStyle: {
+    fontSize: SIZES.small13,
+    color: '#1E9991',
+    fontWeight: '500',
+  },
+  iconStyle: {
+    width: 20,
+    height: 20,
+  },
+  inputSearchStyle: {
+    height: 30,
+    fontSize: 13,
+    backgroundColor: '#EEEEEE',
+    color: 'black',
+  },
+  mainBtn: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    width: deviceWidth / 1.09,
+    marginTop: 20,
+  },
+  btnSave: {
+    marginBottom: 10,
+    width: 100,
+    borderRadius: 5,
+    marginRight: 5,
+    minHeight: 30,
+    backgroundColor: '#3FDBD1',
+  },
+  btnCancel: {
+    marginBottom: 10,
+    width: 100,
+    borderRadius: 5,
+    minHeight: 30,
+    backgroundColor: '#F6F3F3',
+  },
+  textStyle: { color: 'black', fontSize: 13, fontWeight: '500' },
+  rightCross: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+  },
+  closeBtn: {
+    paddingHorizontal: 5,
+    paddingVertical: 5,
+  },
+  mainDown: {
+    height: 27,
+    width: deviceWidth / 2.5,
+    paddingHorizontal: 10,
+    borderRadius: 5,
+    backgroundColor: '#EEEEEE',
+    paddingLeft: 10,
+  },
+  mainOption: {
+    position: 'absolute',
+    top: 30,
+    zIndex: 1,
+    backgroundColor: 'white',
+  },
+  optionStyle: {
+    width: deviceWidth / 2.5,
+    height: 50,
+    backgroundColor: 'white',
+    alignItems: 'flex-start',
+    justifyContent: 'center',
+    paddingHorizontal: 10,
+    borderBottomColor: '#EEEEEE',
+    borderBottomWidth: 1,
+  },
+  optionText: {
+    fontSize: SIZES.small,
+    fontFamily: FONT.PoppinsMedium,
+    color: 'black',
+  },
+  addlinkBtn: {
+    backgroundColor: ColorTheme.primary,
+    minHeight: 40,
+    width: deviceWidth / 1.09,
+    zIndex: -1,
+  },
+  rowStyle: {
+    width: deviceWidth / 1.09,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: '#EEEEEE',
+    height: 40,
+  },
+});

@@ -1,0 +1,196 @@
+import { StyleSheet } from 'react-native';
+
+import { ColorTheme, FONT } from '@/theme';
+import { deviceWidth, px } from '@/utils';
+
+export const styles = StyleSheet.create({
+  mainContainer: {
+    flex: 1,
+    backgroundColor: ColorTheme.white,
+  },
+  keyboardView: { flex: 1 },
+  stepContainer: {
+    alignContent: 'center',
+    marginTop: px(70),
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  stepText: {
+    color: ColorTheme.onboardingPrimary,
+    fontFamily: FONT.PoppinsMedium,
+    fontWeight: 'bold',
+    fontSize: px(20),
+    textAlign: 'center',
+  },
+
+  lineText: {
+    color: ColorTheme.black,
+    fontFamily: FONT.PoppinsRegular,
+    marginTop: px(10),
+    fontSize: px(14),
+    textAlign: 'center',
+  },
+  buttonContainer: {
+    width: px(150),
+    borderRadius: 5,
+    backgroundColor: ColorTheme.white,
+    borderWidth: 0.5,
+    borderColor: ColorTheme.onboardingButton,
+    elevation: 5,
+  },
+  BtnStyle: {
+    fontSize: px(12),
+    fontFamily: FONT.PoppinsThin,
+    fontWeight: '500',
+    color: ColorTheme.onboardingPrimary,
+  },
+  nextContainer: {
+    width: px(150),
+    borderRadius: 5,
+    backgroundColor: ColorTheme.onboardingButton,
+
+    elevation: 5,
+  },
+  nextStyle: {
+    fontSize: px(12),
+    fontFamily: FONT.PoppinsThin,
+    fontWeight: '500',
+    color: ColorTheme.black,
+  },
+  searchParentContainer: {
+    height: 40,
+    marginTop: 50,
+    elevation: 10,
+  },
+  searchContainer: {
+    flexDirection: 'row',
+    gap: 5,
+    elevation: 10,
+    width: deviceWidth / 1.09,
+    alignSelf: 'center',
+    alignItems: 'center',
+  },
+  searchChild: {
+    flex: 1,
+    borderWidth: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    padding: 4,
+    borderRadius: 10,
+    alignItems: 'center',
+    borderColor: ColorTheme.nearLukGray2,
+    gap: 5,
+    paddingHorizontal: 10,
+    // elevation: 5,
+  },
+  textInput: {
+    flex: 1,
+    // padding: 5,
+    paddingLeft: 5,
+    // borderRightWidth: 1,
+    borderRightColor: ColorTheme.nearLukGray2,
+    color: 'black',
+    height: 35,
+  },
+  absoluteView: {
+    position: 'absolute',
+    top: px(45),
+    left: 0,
+    right: 0,
+    backgroundColor: 'white',
+    zIndex: 1000,
+    borderRadius: px(5),
+    shadowColor: ColorTheme.black,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: px(5),
+    elevation: 5,
+    width: '99%',
+    alignSelf: 'center',
+    overflow: 'hidden',
+
+    // height: px(150),
+  },
+  renderText: {
+    fontSize: px(14),
+    fontFamily: FONT.PoppinsThin,
+    fontWeight: '500',
+    color: ColorTheme.black,
+    marginTop: px(10),
+  },
+
+  touchableContainer: {
+    width: px(150),
+    height: px(60),
+    borderRadius: 5,
+    backgroundColor: '#F5F9F9',
+    justifyContent: 'center',
+    elevation: 5,
+    marginHorizontal: px(5),
+    marginTop: px(10),
+    padding: px(10),
+  },
+  touchableText: {
+    color: ColorTheme.black,
+    fontFamily: FONT.PoppinsRegular,
+
+    fontSize: px(14),
+    textAlign: 'center',
+  },
+  modalBackground: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  modalContainer: {
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 20,
+    width: '80%',
+    maxHeight: '80%',
+  },
+
+  selectedText: {
+    backgroundColor: ColorTheme.onboardingPrimary,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    color: ColorTheme.white,
+  },
+  selectedCitiesContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginTop: 10,
+    width: '90%',
+    alignSelf: 'center',
+  },
+  selectedCityButton: {
+    backgroundColor: ColorTheme.onboardingPrimary,
+    borderRadius: 5,
+    paddingVertical: 10,
+    paddingHorizontal: 10,
+    marginRight: 10,
+    marginBottom: 10,
+    flexDirection: 'row',
+  },
+  selectedCityText: {
+    backgroundColor: ColorTheme.onboardingPrimary,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    color: ColorTheme.white,
+  },
+  inputStyle: {
+    marginTop: px(20),
+
+    height: px(40),
+    width: '92%',
+    borderRadius: 8,
+    alignSelf: 'center',
+  },
+  inputView: { width: deviceWidth, justifyContent: 'center', alignItems: 'center', marginBottom: px(20) },
+  dateText: {
+    fontFamily: FONT.PoppinsRegular,
+    fontSize: px(12),
+    color: ColorTheme.black,
+  },
+});

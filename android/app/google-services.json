@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "747300871983",
+    "project_id": "nearluk-application-746c2",
+    "storage_bucket": "nearluk-application-746c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:747300871983:android:ec6d58724b0d9030670bda",
+        "android_client_info": {
+          "package_name": "com.nearlukapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIaI3zSSxhkMOM3k6Zp4tBvP_dcYLs-Ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

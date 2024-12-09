@@ -1,0 +1,403 @@
+import { StyleSheet } from 'react-native';
+
+import { ColorTheme, FONT, SIZES } from '@/theme';
+import { deviceWidth, px } from '@/utils';
+
+export const styles = StyleSheet.create({
+  container: {
+    alignSelf: 'center',
+    backgroundColor: 'white',
+    paddingVertical: 10,
+    borderBottomWidth: 10,
+    borderBottomColor: '#F2F2F2',
+  },
+  header: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: deviceWidth / 1.09,
+    alignSelf: 'center',
+  },
+  ownerText: {
+    fontSize: SIZES.medium15,
+    fontWeight: 'bold',
+    color: 'white',
+    alignSelf: 'center',
+  },
+  subContainer: {
+    flexDirection: 'row',
+    gap: 10,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  rowContainer: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-end',
+  },
+  carpetImage: {
+    height: 21,
+    width: 21,
+    marginRight: 5,
+  },
+  carpetAreaText: {
+    fontSize: SIZES.small11,
+    fontWeight: '400',
+    color: '#8C8C8C',
+    flexWrap: 'wrap',
+  },
+  sqText: {
+    fontSize: SIZES.small11,
+    fontWeight: '400',
+    color: 'black',
+  },
+  furnishingContainer: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-end',
+    paddingHorizontal: 10,
+  },
+  floorContainer: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'flex-end',
+  },
+  userInfo: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+  },
+  userAvatar: {
+    width: 40,
+    height: 40,
+    borderRadius: 100,
+  },
+  userNameContainer: {
+    marginLeft: 10,
+  },
+  userName: {
+    fontFamily: FONT.PoppinsMedium,
+    fontSize: SIZES.small13,
+    fontWeight: 'bold',
+    lineHeight: 20,
+    color: 'black',
+  },
+  postedOn: {
+    fontFamily: FONT.PoppinsMedium,
+    color: '#848484',
+    fontSize: SIZES.xSmall,
+    lineHeight: SIZES.medium15,
+  },
+  dotsContainer: {
+    flexDirection: 'row',
+    gap: 10,
+  },
+  propertyInfo: {
+    marginTop: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: deviceWidth / 1.09,
+    alignSelf: 'center',
+  },
+  propertyDetails: {
+    width: '55%',
+  },
+  propertyTitle: {
+    fontSize: px(14),
+    fontWeight: '600',
+
+    width: deviceWidth / 1.6,
+    fontFamily: FONT.PoppinsMedium,
+    color: '#0000EE',
+  },
+  propertyTitleSub: {
+    fontSize: px(12),
+    // fontWeight: 'bold',
+    width: deviceWidth / 1.6,
+    fontFamily: FONT.PoppinsMedium,
+    color: 'black',
+  },
+  locationInfo: {
+    fontFamily: FONT.PoppinsMedium,
+    fontSize: SIZES.small11,
+    fontWeight: '400',
+    lineHeight: SIZES.medium15,
+    color: '#5F5F5F',
+  },
+  propertyDescription: {
+    fontFamily: FONT.PoppinsRegular,
+    fontSize: SIZES.small13,
+    fontWeight: '400',
+    lineHeight: SIZES.xLarge,
+    color: '#A4A4A4',
+  },
+  propertyPrice: {
+    width: '45%',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+  },
+  propertyPrice_sub: {
+    width: '45%',
+    flexDirection: 'column',
+    alignItems: 'flex-end',
+  },
+
+  propertyPrice_builder: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+  },
+
+  price: {
+    fontFamily: FONT.PoppinsBold,
+    fontSize: 16.5,
+    color: ColorTheme.black,
+    // fontWeight: '600',
+    fontWeight: 'bold',
+    // marginRight: 10,
+  },
+  areaInfo: {
+    fontFamily: FONT.PoppinsMedium,
+    fontSize: 10,
+    color: '#5F5F5F',
+    alignItems: 'flex-end',
+  },
+  descriptionContainer: {
+    width: deviceWidth / 1.09,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingRight: 10,
+    marginTop: 10,
+  },
+  widthContainer: {
+    width: '88%',
+  },
+  tenWidth: {
+    width: '10%',
+  },
+  certifiedImage: {
+    width: 40,
+    height: 40,
+  },
+  imageVideo: {
+    width: deviceWidth / 1.09,
+    height: deviceWidth / 1.2,
+    borderRadius: 5,
+  },
+  imageLength: {
+    width: deviceWidth / 1.09,
+    height: px(300),
+    borderRadius: 5,
+  },
+  userPostView: {
+    width: deviceWidth / 2.2,
+    height: px(160),
+    borderRadius: 1,
+    marginBottom: px(3),
+  },
+  morethanCouple: {
+    width: deviceWidth / 1.09,
+    height: px(150),
+    borderRadius: 5,
+  },
+  userImage: {
+    width: deviceWidth / 1.09,
+    height: px(132),
+    borderRadius: 1,
+  },
+  touchableGesture: {
+    width: deviceWidth / 3.4,
+    height: px(150),
+    borderRadius: 2,
+  },
+  absoluteContainer: {
+    position: 'absolute',
+    top: px(60),
+    left: deviceWidth / 9,
+    width: px(40),
+    height: px(40),
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: px(20),
+  },
+  lessthanText: {
+    color: 'white',
+    fontSize: SIZES.medium15,
+  },
+  propertyDetail: {
+    marginTop: 10,
+    width: deviceWidth / 1.09,
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    // alignSelf: "center",
+  },
+  infoContainer: {
+    width: deviceWidth,
+    // flexDirection: "row",
+    // justifyContent: "center",
+    alignItems: 'center',
+    // alignSelf: "center",
+  },
+  description: {
+    fontSize: 14,
+    fontFamily: FONT.PoppinsMedium,
+    color: 'black',
+  },
+  showMoreText: {
+    color: 'blue',
+    fontFamily: FONT.PoppinsBold,
+  },
+  imageContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    flexWrap: 'wrap',
+    width: deviceWidth / 1.09,
+    alignSelf: 'center',
+    marginTop: 10,
+  },
+  propertyImage: {
+    width: deviceWidth / 2.2,
+    height: 150,
+    borderRadius: 2,
+    marginBottom: 2,
+  },
+  additionalImage: {
+    width: deviceWidth / 3.4,
+    height: px(150),
+    // borderRadius: 2,
+    // marginTop: 6,
+  },
+  footer: {
+    marginTop: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    width: deviceWidth / 1.09,
+    alignSelf: 'center',
+  },
+  likesContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+  },
+  likeIconContainer: {
+    padding: 5,
+    backgroundColor: '#2096f3',
+    borderRadius: 100,
+  },
+  likeCount: {
+    fontFamily: FONT.PoppinsMedium,
+    color: ColorTheme.gray,
+  },
+  commentsContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+  },
+  commentCount: {
+    fontFamily: FONT.PoppinsRegular,
+    color: ColorTheme.gray,
+  },
+  commonText: {
+    fontFamily: FONT.PoppinsRegular,
+    color: ColorTheme.gray,
+    fontSize: SIZES.small14,
+  },
+  viewCount: {
+    fontFamily: FONT.PoppinsRegular,
+    color: ColorTheme.gray,
+  },
+  separator: {
+    borderBottomWidth: 2,
+    borderBottomColor: '#E4E4E4',
+    width: deviceWidth,
+    alignSelf: 'center',
+    marginTop: 10,
+  },
+  tagsContainer: {
+    marginTop: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    flexWrap: 'wrap',
+    gap: 10,
+    width: deviceWidth / 1.09,
+    justifyContent: 'space-between',
+    alignSelf: 'center',
+  },
+  marginView: {
+    marginTop: -3,
+  },
+  likeStyle: {
+    fontFamily: FONT.PoppinsRegular,
+    fontSize: 15,
+    color: 'black',
+  },
+  commonImage: {
+    width: 16,
+    height: 16,
+  },
+  tag: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    justifyContent: 'center',
+  },
+  tagIcon: {
+    width: 20,
+    height: 20,
+  },
+  tagText: {
+    fontFamily: FONT.PoppinsRegular,
+    fontSize: 15,
+    color: 'black',
+  },
+  actionsContainer: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    gap: 20,
+    width: deviceWidth / 1.09,
+    alignItems: 'center',
+    marginTop: 15,
+  },
+  callButton: {
+    backgroundColor: ColorTheme.primary,
+    borderRadius: 100,
+    width: 50,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  callIcon: {
+    width: 25,
+    height: 25,
+  },
+  chatButton: {
+    backgroundColor: '#F2F2F2',
+    borderRadius: 100,
+    width: 50,
+    height: 50,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  chatIcon: {
+    width: 25,
+    height: 25,
+  },
+  defaultProfile: {
+    width: 40,
+    height: 40,
+    borderRadius: 30,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: ColorTheme.primary,
+  },
+  moreBtn: {
+    lineHeight: 16,
+    fontSize: SIZES.small,
+    color: ColorTheme.moreButtonColor,
+    fontWeight: '400',
+    flex: 1,
+  },
+});

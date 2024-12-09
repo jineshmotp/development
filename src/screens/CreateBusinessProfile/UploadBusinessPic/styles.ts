@@ -1,0 +1,127 @@
+import { StyleSheet } from 'react-native';
+
+import { ColorTheme, FONT, SIZES } from '@/theme';
+import { deviceWidth } from '@/utils';
+
+export const styles = StyleSheet.create({
+  topSection: {
+    width: deviceWidth / 1.2,
+    alignSelf: 'center',
+    alignItems: 'center',
+    position: 'relative',
+  },
+  topSectionView: {
+    width: deviceWidth / 1.09,
+    alignItems: 'flex-start',
+    marginBottom: 20,
+  },
+  topText: {
+    fontSize: SIZES.large,
+    fontFamily: FONT.PoppinsMedium,
+    color: 'black',
+  },
+  completeProfile: {
+    fontSize: SIZES.small,
+    fontFamily: FONT.PoppinsRegular,
+    color: '#B9B9B9',
+  },
+  imgBg: {
+    height: 250,
+    width: deviceWidth / 1.09,
+    borderRadius: 10,
+    overflow: 'hidden',
+  },
+  defaultBg: {
+    height: 250,
+    width: deviceWidth / 1.09,
+    backgroundColor: ColorTheme.nearLukGray4,
+    borderRadius: 10,
+  },
+  camLoder: {
+    position: 'absolute',
+    bottom: 10,
+    right: 10,
+    borderRadius: 100,
+    borderWidth: 1,
+    padding: 7,
+    backgroundColor: ColorTheme.lightWhite,
+  },
+  bussProfile: {
+    backgroundColor: ColorTheme.nearLukGray3,
+    padding: 5,
+    borderRadius: 100,
+    position: 'absolute',
+    left: 20,
+    bottom: -45,
+    zIndex: 999,
+    borderWidth: 2,
+    borderColor: 'white',
+  },
+  maskImg: {
+    width: 100,
+    height: 100,
+  },
+  imgStyle: {
+    width: 100,
+    height: 100,
+    overflow: 'hidden',
+    borderRadius: 100,
+  },
+  profileLoader: {
+    position: 'absolute',
+    borderRadius: 100,
+    borderWidth: 2,
+    borderColor: 'white',
+    padding: 7,
+    backgroundColor: ColorTheme.nearLukGray3,
+    zIndex: 999,
+    left: 100,
+    top: 2,
+  },
+  bussNameView: {
+    marginTop: 50,
+    alignSelf: 'center',
+    width: deviceWidth / 1.09,
+  },
+  subHeader: {
+    marginTop: 20,
+    alignSelf: 'center',
+    width: deviceWidth / 1.09,
+    borderWidth: 0.4,
+    borderRadius: 10,
+    padding: 10,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    borderColor: '#CCCCCC',
+  },
+  bussId: {
+    fontFamily: FONT.PoppinsRegular,
+    fontSize: 12,
+    color: 'black',
+  },
+  details: {
+    alignSelf: 'center',
+    width: deviceWidth / 1.09,
+    fontFamily: FONT.PoppinsRegular,
+    fontSize: 10,
+    marginTop: 10,
+    color: ColorTheme.nearLukGray,
+  },
+  addProfile: {
+    alignSelf: 'center',
+    width: deviceWidth / 1.09,
+    fontFamily: FONT.PoppinsRegular,
+    fontSize: 18,
+    marginTop: 80,
+    color: ColorTheme.nearLukGray,
+    textAlign: 'center',
+  },
+  btnTopView: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 10,
+  },
+  btnStyle: { backgroundColor: ColorTheme.primary },
+  btnText: { color: 'black' },
+});
